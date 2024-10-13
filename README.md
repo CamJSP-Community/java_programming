@@ -1,40 +1,77 @@
+<!-- Logo -->
 <div align="center">
-  <img src="./java.svg" alt="Java Logo" width="200" style="animation: zoomIn 3s infinite;">
+  <img src="./java.svg" alt="Java Logo" width="150" height="150">
 </div>
 
-<h1 align="center" style="font-family: 'Montserrat', sans-serif; font-size: 3.5rem; color: #ff6f61;">
-  <b>JAVA PROGRAMMING</b>
-</h1>
+<!-- Title -->
+<h1 align="center">JAVA_PROGRAMMING</h1>
 
+<!-- Badges -->
 <p align="center">
-  <a href="https://github.com/CamJSP-Community/java_learning">
-    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_learning?style=for-the-badge&color=brightgreen" alt="Stars Badge"/>
+  <a href="https://github.com/CamJSP-Community/java_programming/stargazers">
+    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub stars">
   </a>
-  <a href="https://github.com/CamJSP-Community/java_learning/issues">
-    <img src="https://img.shields.io/github/issues/CamJSP-Community/java_learning?style=for-the-badge&color=blue" alt="Issues Badge"/>
+  <a href="https://github.com/CamJSP-Community/java_programming/network/members">
+    <img src="https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub forks">
   </a>
 </p>
 
-<p align="center" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
-  A comprehensive repository of Java algorithms and data structures, designed for developers at any level.
-</p>
+---
 
-<h2 align="center" style="font-family: 'Courier New', monospace;">📑 Table des Matières</h2>
+## Description
 
-<div align="center">
-  <details>
-    <summary style="cursor: pointer; font-size: 1.5em; font-weight: bold;">🔹 Algorithmes sur les Tableaux</summary>
-    <ul style="font-size: 1.2rem;">
-      <li>Recherche</li>
-      <li>Manipulation des tableaux</li>
-    </ul>
-  </details>
-</div>
+Ce dépôt est une source complète d'algorithmes, de problèmes classiques et de concepts fondamentaux implémentés en Java, sous la forme d'un projet Maven. Il est conçu pour servir de référence et d'outil d'apprentissage pour les développeurs souhaitant approfondir leur compréhension des algorithmes et des structures de données en Java.
 
-<h2 style="font-family: 'Courier New', monospace;">🔧 Installation</h2>
-<ol>
-  <li>Clonez le dépôt :
-    <pre><code>git clone https://github.com/CamJSP-Community/java_learning.git</code></pre>
-  </li>
-  <!-- Reste du contenu -->
-</ol>
+Vous trouverez ici des algorithmes de tri, des structures de données telles que les arbres, les files, les piles, ainsi que des problèmes plus avancés en Java. Ce dépôt est conçu pour évoluer avec de nouvelles contributions.
+
+## Table des Matières
+
+- Arrays
+- Sorts
+- Trees
+- Queues
+- Piles (Stacks)
+
+## Installation
+
+### Prérequis
+
+Assurez-vous d'avoir installé les éléments suivants avant de cloner le dépôt :
+
+- Java (JDK 21 ou plus récent)
+- Maven
+
+### Étapes d'installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/CamJSP-Community/java_programming.git
+   ```
+
+2. Naviguez dans le répertoire cloné :
+   ```bash
+   cd java_programming
+   ```
+
+3. Accédez au projet que vous souhaitez, par exemple celui du tri :
+   ```bash
+   cd tri
+   ```
+
+4. Compilez le projet avec Maven :
+   ```bash
+   mvn clean install
+   ```
+
+5. Exécutez les tests :
+   ```bash
+   mvn test
+   ```
+
+## Contribuer
+
+Nous acceptons volontiers les contributions de la communauté ! Pour plus d'informations, veuillez consulter le fichier [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## Licence
+
+Ce projet est sous licence [MIT](./LICENSE).
