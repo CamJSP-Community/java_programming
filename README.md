@@ -6,15 +6,46 @@
 <!-- Title -->
 <h1 align="center">java_programming</h1>
 
-<!-- Badges -->
-<p align="center">
+<!-- Custom Badge Section -->
+<div align="center">
+
+  <!-- Stars Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/stargazers">
-    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub stars">
+    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=plastic" alt="GitHub stars">
   </a>
+
+  <!-- Forks Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/network/members">
-    <img src="https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub forks">
+    <img src="https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=plastic" alt="GitHub forks">
   </a>
-</p>
+
+  <!-- Issues Badge -->
+  <a href="https://github.com/CamJSP-Community/java_programming/issues">
+    <img src="https://img.shields.io/github/issues/CamJSP-Community/java_programming?style=plastic" alt="GitHub issues">
+  </a>
+
+  <!-- Pull Requests Badge -->
+  <a href="https://github.com/CamJSP-Community/java_programming/pulls">
+    <img src="https://img.shields.io/github/issues-pr/CamJSP-Community/java_programming?style=plastic" alt="GitHub pull requests">
+  </a>
+
+  <!-- Last Commit Badge -->
+  <a href="https://github.com/CamJSP-Community/java_programming/commits/main">
+    <img src="https://img.shields.io/github/last-commit/CamJSP-Community/java_programming?style=plastic" alt="Last commit">
+  </a>
+
+  <!-- License Badge -->
+  <a href="https://github.com/CamJSP-Community/java_programming/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/CamJSP-Community/java_programming?style=plastic" alt="License">
+  </a>
+
+  <!-- Code Size Badge -->
+  <a href="https://github.com/CamJSP-Community/java_programming">
+    <img src="https://img.shields.io/github/languages/code-size/CamJSP-Community/java_programming?style=plastic" alt="Code size">
+  </a>
+
+</div>
+
 
 ---
 
