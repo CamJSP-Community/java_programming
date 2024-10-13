@@ -11,7 +11,7 @@
 
   <!-- Stars Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/stargazers">
-    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=plastic" alt="GitHub stars">
+    <img src="https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub stars">
   </a>
 
   <!-- Forks Badge -->
@@ -35,7 +35,7 @@
   </a>
 
   <!-- License Badge -->
-  <a href="https://github.com/CamJSP-Community/java_programming/blob/main/LICENSE">
+  <a href="https://github.com/CamJSP-Community/java_programming/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/CamJSP-Community/java_programming?style=plastic" alt="License">
   </a>
 
