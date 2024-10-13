@@ -1,6 +1,6 @@
 <!-- Logo -->
 <div align="center">
-  <img src="./java.svg" alt="Java Logo" width="150" height="150">
+  <img src="./java.svg" alt="Java Logo">
 </div>
 
 <!-- Title -->
@@ -41,7 +41,7 @@
 
   <!-- Code Size Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming">
-    <img src="https://img.shields.io/github/languages/code-size/CamJSP-Community/java_programming?style=plastic" alt="Code size">
+    <img src="https://img.shields.io/github/languages/code-size/CamJSP-Community/java_programming?style=for-the-badge" alt="Code size">
   </a>
 
 </div>
