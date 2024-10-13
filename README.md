@@ -16,27 +16,27 @@
 
   <!-- Forks Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/network/members">
-    <img src="https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=plastic" alt="GitHub forks">
+    <img src="https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub forks">
   </a>
 
   <!-- Issues Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/issues">
-    <img src="https://img.shields.io/github/issues/CamJSP-Community/java_programming?style=plastic" alt="GitHub issues">
+    <img src="https://img.shields.io/github/issues/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub issues">
   </a>
 
   <!-- Pull Requests Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/pulls">
-    <img src="https://img.shields.io/github/issues-pr/CamJSP-Community/java_programming?style=plastic" alt="GitHub pull requests">
+    <img src="https://img.shields.io/github/issues-pr/CamJSP-Community/java_programming?style=for-the-badge" alt="GitHub pull requests">
   </a>
 
   <!-- Last Commit Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/commits/main">
-    <img src="https://img.shields.io/github/last-commit/CamJSP-Community/java_programming?style=plastic" alt="Last commit">
+    <img src="https://img.shields.io/github/last-commit/CamJSP-Community/java_programming?style=for-the-badge" alt="Last commit">
   </a>
 
   <!-- License Badge -->
   <a href="https://github.com/CamJSP-Community/java_programming/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/CamJSP-Community/java_programming?style=plastic" alt="License">
+    <img src="https://img.shields.io/github/license/CamJSP-Community/java_programming?style=for-the-badge" alt="License">
   </a>
 
   <!-- Code Size Badge -->
