@@ -4,7 +4,7 @@
 </div>
 
 <!-- Title -->
-<h1 align="center">JAVA_PROGRAMMING</h1>
+<h1 align="center">java_programming</h1>
 
 <!-- Badges -->
 <p align="center">
