@@ -109,7 +109,7 @@ Make sure you have installed the following before cloning the repository:
 
 3. Access the project you want, for example, the sorting one:
    ```bash
-   cd tri
+   cd sort
    ```
 
 4. Build the project using Maven:
