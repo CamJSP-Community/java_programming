@@ -46,63 +46,90 @@
 
 </div>
 
-
 ---
 
 ## Description
 
-Ce dépôt est une source complète d'algorithmes, de problèmes classiques et de concepts fondamentaux implémentés en Java, sous la forme d'un projet Maven. Il est conçu pour servir de référence et d'outil d'apprentissage pour les développeurs souhaitant approfondir leur compréhension des algorithmes et des structures de données en Java.
+This repository is a comprehensive source of algorithms, classical problems, and fundamental concepts implemented in Java, structured as a Maven project. It is designed to serve as a reference and learning tool for developers who want to deepen their understanding of algorithms and data structures in Java.
 
-Vous trouverez ici des algorithmes de tri, des structures de données telles que les arbres, les files, les piles, ainsi que des problèmes plus avancés en Java. Ce dépôt est conçu pour évoluer avec de nouvelles contributions.
+You will find sorting algorithms, data structures such as trees, queues, stacks, as well as more advanced Java problems. This repository is designed to evolve with new contributions.
 
-## Table des Matières
+## Table of Contents
 
-- Arrays
-- Sorts
-- Trees
-- Queues
-- Piles (Stacks)
+<details>
+  <summary><strong>Arrays</strong></summary>
+  <p>Details about Arrays.</p>
+  <!-- Include relevant content or links here -->
+</details>
+
+<details>
+  <summary><strong>Sorts</strong></summary>
+  <p>Details about sorting algorithms.</p>
+  <!-- Include relevant content or links here -->
+</details>
+
+<details>
+  <summary><strong>Trees</strong></summary>
+  <p>Details about tree data structures.</p>
+  <!-- Include relevant content or links here -->
+</details>
+
+<details>
+  <summary><strong>Queues</strong></summary>
+  <p>Details about queue data structures.</p>
+  <!-- Include relevant content or links here -->
+</details>
+
+<details>
+  <summary><strong>Stacks</strong></summary>
+  <p>Details about stack data structures.</p>
+  <!-- Include relevant content or links here -->
+</details>
 
 ## Installation
 
-### Prérequis
+### Prerequisites
 
-Assurez-vous d'avoir installé les éléments suivants avant de cloner le dépôt :
+Make sure you have installed the following before cloning the repository:
 
-- Java (JDK 21 ou plus récent)
+- Java (JDK 21 or newer)
 - Maven
 
-### Étapes d'installation
+### Installation Steps
 
-1. Clonez le dépôt :
+1. Clone the repository:
    ```bash
    git clone https://github.com/CamJSP-Community/java_programming.git
    ```
 
-2. Naviguez dans le répertoire cloné :
+2. Navigate to the cloned directory:
    ```bash
    cd java_programming
    ```
 
-3. Accédez au projet que vous souhaitez, par exemple celui du tri :
+3. Access the project you want, for example, the sorting one:
    ```bash
    cd tri
    ```
 
-4. Compilez le projet avec Maven :
+4. Build the project using Maven:
    ```bash
    mvn clean install
    ```
 
-5. Exécutez les tests :
+5. Run the tests:
    ```bash
    mvn test
    ```
+6. Generate a documentation:
+   ```bash
+   mvn javadoc:javadoc
+   ```
 
-## Contribuer
+## Contributing
 
-Nous acceptons volontiers les contributions de la communauté ! Pour plus d'informations, veuillez consulter le fichier [CONTRIBUTING.md](./CONTRIBUTING.md).
+We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
-## Licence
+## License
 
-Ce projet est sous licence [MIT](./LICENSE).
+This project is licensed under the [MIT](./LICENSE) license.!
