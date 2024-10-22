@@ -30,7 +30,6 @@ public class InsertionSort implements SortAlgorithm {
         "3. The current element is inserted into the correct position in the sorted part, by shifting larger elements to the right to make space.\n" +
         "4. This process repeats until the entire array is sorted.\n" +
         "Time complexity: O(n^2) in the worst case, but it is efficient for small arrays or arrays that are already nearly sorted.";
-
     }
     
 }

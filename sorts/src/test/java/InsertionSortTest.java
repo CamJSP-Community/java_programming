@@ -18,7 +18,7 @@ public class InsertionSortTest {
 
     @Test 
     void testDescription() {
-        BubbleSort insertionSort= new BubbleSort();
+        InsertionSort insertionSort= new InsertionSort();
         assertNotNull(insertionSort.getDescription(), "Description should not be null.");
     }
 }
