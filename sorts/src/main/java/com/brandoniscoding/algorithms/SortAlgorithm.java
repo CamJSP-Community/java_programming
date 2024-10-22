@@ -9,19 +9,7 @@ package com.brandoniscoding.algorithms;
  */
 public interface SortAlgorithm {
 
-    /**
-     * Sorts the specified array of integers in ascending order.
-     * 
-     * @param array the array of integers to be sorted.
-     *              This method modifies the input array in place, meaning the original 
-     *              array will be sorted without the need for additional storage.
-     */
     void sort(int[] array);
-
-    /**
-     * Returns a description of the sorting algorithm.
-     * 
-     * @return a string describing the algorithm, including its characteristics and complexities.
-     */
+    
     String getDescription();
 }
