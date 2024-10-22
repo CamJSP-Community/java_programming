@@ -42,7 +42,7 @@ public class Main {
     private static void displayMenu() {
         System.out.println("=== Menu for Choosing Algorithm ===");
         System.out.println("1. Bubble Sort");
-        System.out.println("1. Insertion  Sort");
+        System.out.println("2. Insertion  Sort");
         System.out.println("0. Exit");
         System.out.print("Enter your choice: ");
     }
@@ -60,8 +60,10 @@ public class Main {
         int option = scanner.nextInt();
 
         if (option == 1) {
+            System.out.println("UnSorted Array: \n");
+            ArrayUtils.printArray(array);
             algorithm.sort(array);
-            System.out.println("Sorted Array: ");
+            System.out.println("Sorted Array: \n");
             ArrayUtils.printArray(array);
         } else if (option == 2) {
             System.out.println("Algorithm Description: ");

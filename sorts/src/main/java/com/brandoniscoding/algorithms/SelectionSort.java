@@ -1,5 +1,7 @@
 package com.brandoniscoding.algorithms;
 
+import static com.brandoniscoding.utils.ArrayUtils.swap;
+
 public class SelectionSort implements SortAlgorithm{
 
     public SelectionSort() {};
@@ -13,9 +15,7 @@ public class SelectionSort implements SortAlgorithm{
                     min = j;
                 }
             }
-            int temp = array[min];
-            array[min] = array[i];
-            array[i] = temp;
+            swap(array, min, i);
         }
     }
 

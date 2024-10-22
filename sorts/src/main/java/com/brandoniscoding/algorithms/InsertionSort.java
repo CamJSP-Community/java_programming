@@ -15,7 +15,6 @@ public class InsertionSort implements SortAlgorithm {
                 array[j+1] = array[j];
                 j = j - 1;
             }
-
             array[j + 1] = current;
         }
 
