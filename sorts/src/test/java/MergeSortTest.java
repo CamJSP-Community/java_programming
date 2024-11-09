@@ -3,16 +3,16 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 
-import com.brandoniscoding.algorithms.SelectionSort;
+import com.brandoniscoding.algorithms.MergeSort;
 
-public class SelectionSortTest {
+public class MergeSortTest {
 
     // Test case for sorting an Integer array
     @Test
     void testSortIntegerArray() {
-        Integer[] array = {5, 1, 4, 2, 8}; // Unsorted array
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array
+        Integer[] array = {5, 1, 4, 2, 8};
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array);
         assertArrayEquals(new Integer[]{1, 2, 4, 5, 8}, array); // Verify sorted order
     }
 
@@ -20,8 +20,8 @@ public class SelectionSortTest {
     @Test
     void testSortDoubleArray() {
         Double[] array = {5.4, 1.2, 4.3, 2.1, 8.9};
-        SelectionSort<Double> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array
+        MergeSort<Double> mergeSort = new MergeSort<>();
+        mergeSort.sort(array);
         assertArrayEquals(new Double[]{1.2, 2.1, 4.3, 5.4, 8.9}, array); // Verify sorted order
     }
 
@@ -29,8 +29,8 @@ public class SelectionSortTest {
     @Test
     void testSortStringArray() {
         String[] array = {"apple", "orange", "banana", "grape", "pear"};
-        SelectionSort<String> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array
+        MergeSort<String> mergeSort = new MergeSort<>();
+        mergeSort.sort(array);
         assertArrayEquals(new String[]{"apple", "banana", "grape", "orange", "pear"}, array); // Verify sorted order
     }
 
@@ -38,8 +38,8 @@ public class SelectionSortTest {
     @Test
     void testEmptyArray() {
         Integer[] array = {};
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array (should remain empty)
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array); // Sorting an empty array should remain empty
         assertArrayEquals(new Integer[]{}, array); // Verify the array is still empty
     }
 
@@ -47,8 +47,8 @@ public class SelectionSortTest {
     @Test
     void testSingleElementArray() {
         Integer[] array = {5};
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array (should remain the same)
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array); // Sorting a single element array should remain the same
         assertArrayEquals(new Integer[]{5}, array); // Verify the array is unchanged
     }
 
@@ -56,8 +56,8 @@ public class SelectionSortTest {
     @Test
     void testSortedArray() {
         Integer[] array = {1, 2, 3, 4, 5};
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array (should remain the same)
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array); // Already sorted, should remain the same
         assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, array); // Verify the array remains sorted
     }
 
@@ -65,8 +65,8 @@ public class SelectionSortTest {
     @Test
     void testReverseOrderedArray() {
         Integer[] array = {5, 4, 3, 2, 1};
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array); // Should sort to ascending order
         assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, array); // Verify sorted order
     }
 
@@ -74,15 +74,15 @@ public class SelectionSortTest {
     @Test
     void testArrayWithDuplicates() {
         Integer[] array = {5, 1, 5, 2, 8, 1};
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.sort(array); // Sort the array
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(array);
         assertArrayEquals(new Integer[]{1, 1, 2, 5, 5, 8}, array); // Verify sorted order with duplicates
     }
 
     // Test case for testing the description
-    @Test
+    @Test 
     void testDescription() {
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        assertNotNull(selectionSort.getDescription(), "Description should not be null.");
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        assertNotNull(mergeSort.getDescription(), "Description should not be null.");
     }
 }

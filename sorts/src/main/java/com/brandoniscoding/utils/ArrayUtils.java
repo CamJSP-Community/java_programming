@@ -1,23 +1,24 @@
 package com.brandoniscoding.utils;
 
-public class ArrayUtils {
+public class ArrayUtils<T extends Comparable<T>> {
 
-    public static void printArray(int[] array) {
+    // Generic method to print an array of objects of type T
+    public static <T> void printArray(T[] array) {
         if (array == null || array.length == 0) {
             System.out.println("Array is empty or null.");
             return;
         }
 
-        for (int i : array) {
-            System.out.print(i + " ");
+        for (T element : array) {
+            System.out.print(element + " ");
         }
         System.out.println();
     }
 
-    public static void swap(int[] array, int i, int j) { 
-        int temp = array[i];
+    // Generic method to swap two elements in an array of type T
+    public static <T> void swap(T[] array, int i, int j) { 
+        T temp = array[i];
         array[i] = array[j];
         array[j] = temp;
-
     }
 }
