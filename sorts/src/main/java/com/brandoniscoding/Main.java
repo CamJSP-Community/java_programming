@@ -3,101 +3,76 @@ package com.brandoniscoding;
 import java.util.Scanner;
 import com.brandoniscoding.algorithms.BubbleSort;
 import com.brandoniscoding.algorithms.InsertionSort;
-import com.brandoniscoding.algorithms.QuickSort;
 import com.brandoniscoding.algorithms.MergeSort;
-import com.brandoniscoding.algorithms.SelectionSort;
+import com.brandoniscoding.algorithms.QuickSort;
 import com.brandoniscoding.algorithms.SortAlgorithm;
-import com.brandoniscoding.utils.ArrayUtils;
 import com.brandoniscoding.utils.MainUtils;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        // Affichage du menu pour le type de données
-        MainUtils.displayDataTypeMenu();
-        int dataTypeChoice = MainUtils.getUserChoice(scanner);
 
-        Comparable<?>[] dataArray = null; 
-        switch (dataTypeChoice) {
-            case 1: 
-                dataArray = (Comparable[]) MainUtils.inputDataForNumbers(scanner); 
-                break;
-            case 2: 
-                dataArray = (Comparable[]) MainUtils.inputDataForStrings(scanner); 
-                break;
-            case 3: 
-                dataArray = (Comparable[]) MainUtils.inputDataForBooleans(scanner); 
-                break;
-            default:
-                System.out.println("Invalid choice.");
-                return;
-        }
+        // Displaying a welcome message
+        System.out.println("=== Sorting Algorithm Test ===");
+        System.out.println("Choose the sorting algorithm and the action to perform.\n");
 
-        // Création des instances des algorithmes de tri
-        SortAlgorithm<Integer> bubbleSort = new BubbleSort<>();
-        SortAlgorithm<String> insertionSort = new InsertionSort<>();
-        SortAlgorithm<Integer> selectionSort = new SelectionSort<>();
-        SortAlgorithm<Integer> mergeSort = new MergeSort<>();
-        SortAlgorithm<Boolean> quickSort = new QuickSort<>();
+        // Getting input array from the user
+        Integer[] dataArray = MainUtils.inputData(scanner);
 
-        // Boucle principale pour sélectionner un algorithme
+        // Main loop for selecting sorting algorithm and actions
         while (true) {
-            MainUtils.displayMainMenu();
-            int choice = MainUtils.getUserChoice(scanner);
+            MainUtils.displayAlgorithmMenu();
+            int algorithmChoice = MainUtils.getUserChoice(scanner);
 
-            switch (choice) {
+            SortAlgorithm<Integer> selectedAlgorithm = null;
+            switch (algorithmChoice) {
                 case 1:
-                    executeAlgorithm(bubbleSort, (Integer[]) dataArray, scanner);  // Tri par Bulles
+                    selectedAlgorithm = new BubbleSort<>();
                     break;
                 case 2:
-                    executeAlgorithm(insertionSort, (String[]) dataArray, scanner);  // Tri par Insertion
+                    selectedAlgorithm = new InsertionSort<>();
                     break;
                 case 3:
-                    executeAlgorithm(selectionSort, (Integer[]) dataArray, scanner);  // Tri par Selection
+                    selectedAlgorithm = new MergeSort<>();
                     break;
                 case 4:
-                    executeAlgorithm(mergeSort, (Integer[]) dataArray, scanner);  // Tri par Fusion
+                    selectedAlgorithm = new QuickSort<>();
                     break;
-                case 5:
-                    executeAlgorithm(quickSort, (Boolean[]) dataArray, scanner);  // Tri Rapide
-                    break;
-                case 0: 
+                case 0:
                     System.out.println("Exiting program. Goodbye!");
                     return;
                 default:
-                    System.out.println("Invalid option. Please try again.");
+                    System.out.println("Invalid choice. Please try again.");
+                    continue;
             }
-        }
-    }
 
-    private static <T extends Comparable<T>> void executeAlgorithm(SortAlgorithm<T> algorithm, T[] array, Scanner scanner) {
-        System.out.println("1. Execute the sort");
-        System.out.println("2. Print its documentation");
-        System.out.print("Choose your option: ");
-        
-        int option = scanner.nextInt();
+            // Action menu: execute sort or display description
+            System.out.println("1. Execute the sort");
+            System.out.println("2. Display the algorithm description");
+            System.out.print("Enter your choice: ");
+            int actionChoice = MainUtils.getUserChoice(scanner);
 
-        if (option == 1) {
-            System.out.println("Unsorted Array: ");
-            ArrayUtils.printArray(array);
+            if (actionChoice == 1) {
+                System.out.println("\n--- Before Sorting ---");
+                MainUtils.printArray(dataArray);
 
-            // Start timing the algorithm execution
-            long startTime = System.nanoTime();
-            algorithm.sort(array);
-            long endTime = System.nanoTime();
+                // Measure and execute sort
+                long startTime = System.nanoTime();
+                selectedAlgorithm.sort(dataArray);
+                long endTime = System.nanoTime();
 
-            System.out.println("Sorted Array: ");
-            ArrayUtils.printArray(array);
-            
-            // Calculate and display the time taken
-            long duration = endTime - startTime;
-            System.out.println("Execution Time: " + duration + " nanoseconds.");
-        } else if (option == 2) {
-            System.out.println("Algorithm Description: ");
-            System.out.println(algorithm.getDescription());
-        } else {
-            System.out.println("Invalid option. Please try again.");
+                System.out.println("\n--- After Sorting ---");
+                MainUtils.printArray(dataArray);
+
+                // Display execution time
+                long duration = endTime - startTime;
+                System.out.println("\nExecution Time: " + duration + " nanoseconds.");
+            } else if (actionChoice == 2) {
+                System.out.println("\nAlgorithm Description:");
+                System.out.println(selectedAlgorithm.getDescription());
+            } else {
+                System.out.println("Invalid option. Please try again.");
+            }
         }
     }
 }
