@@ -110,7 +110,7 @@ Make sure you have installed the following before cloning the repository:
 
 ## Contributing
 
-We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./.github/CONTRIBUTING.md) file.
 
 ## License
 

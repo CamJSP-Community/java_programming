@@ -28,9 +28,6 @@ java_programming/
 │   │   ├── InsertionSort.java
 │   │   ├── QuickSort.java
 │   │   └── Main.java
-│   ├── docs/
-│   │   ├── README.md
-│   │   └── CONTRIBUTING.md
 │   ├── tests/
 │   │   └── SortTest.java
 │   └── utils/
@@ -40,9 +37,6 @@ java_programming/
 │   ├── src/
 │   │   ├── Search.java
 │   │   └── Add.java
-│   ├── docs/
-│   │   ├── README.md
-│   │   └── CONTRIBUTING.md
 │   ├── tests/
 │   │   └── TreeTest.java
 │   └── utils/
@@ -64,12 +58,12 @@ Create a copy of the repository to your GitHub account by clicking the **"Fork"*
 Clone your fork locally to work on it:
 
 ```bash
-git clone https://github.com/your_username/java_programming.git
+git clone https://github.com/CamJSP-Community/java_programming.git
 ```
 
 ### 3. Create a Branch for Your Changes
 
-Create a new branch for your changes to keep the `main` branch clean:
+Create a new branch for your changes to keep the `master` branch clean:
 
 ```bash
 git checkout -b your-branch-name
@@ -110,16 +104,6 @@ Go to the original repository on GitHub and open a **Pull Request** from your br
 ```bash
 mvn test
 ```
-
-- **Documentation**: Use **Javadoc** to document your code. Here’s an example of how to generate documentation with Maven:
-
-```bash
-mvn javadoc:javadoc
-```
-
-This command will generate documentation in the `target/site/apidocs/` folder.
-
----
 
 ## License
 
