@@ -57,28 +57,14 @@ You will find sorting algorithms, data structures such as trees, queues, stacks,
 ## Table of Contents
 
 <details>
-  <summary><strong>Arrays</strong></summary>
-  <p>Details about Arrays.</p>
-  <!-- Include relevant content or links here -->
-</details>
-
-<details>
   <summary><strong>Sorts</strong></summary>
   <p>Details about sorting algorithms.</p>
-  <!-- Include relevant content or links here -->
+
+  For more information about sorting algorithms, refer to the [README file in the 'sorts' folder](sorts/README.md).
 </details>
 
-<details>
-  <summary><strong>Trees</strong></summary>
-  <p>Details about tree data structures.</p>
-  <!-- Include relevant content or links here -->
-</details>
 
-<details>
-  <summary><strong>Queues</strong></summary>
-  <p>Details about queue data structures.</p>
-  <!-- Include relevant content or links here -->
-</details>
+
 
 <details>
   <summary><strong>Stacks</strong></summary>
@@ -121,14 +107,10 @@ Make sure you have installed the following before cloning the repository:
    ```bash
    mvn test
    ```
-6. Generate a documentation:
-   ```bash
-   mvn javadoc:javadoc
-   ```
 
 ## Contributing
 
-We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./.github/CONTRIBUTING.md) file.
 
 ## License
 
