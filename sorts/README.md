@@ -58,13 +58,11 @@ A highly efficient divide-and-conquer algorithm that selects a "pivot" element, 
 
 ## Running the Project
 
-1. **Compile the Code**: Maven handles compilation automatically with the following command:
+1. **Compile the Code**: Make sure you have Java and Maven installed, and then compile the code using Maven with the following command:
 
    ```bash
    mvn compile
    ```
-
-   This compiles all Java classes located in the `src/main/java` directory.
 
 2. **Run the Sorting Algorithms**: To run the main program, use Maven with the following command:
 
@@ -72,14 +70,14 @@ A highly efficient divide-and-conquer algorithm that selects a "pivot" element, 
    mvn exec:java -Dexec.mainClass="com.brandoniscoding.Main"
    ```
 
-3. **Experiment with Generic Types**: To experiment with different data types in the sorting algorithms:
+3. **Run the Tests**: To execute the unit tests for the sorting algorithms, run the following Maven command:
 
-   - Modify test cases in the `Main` class or in test classes under `src/test/java` to test data types like `Integer`, `String`, or custom objects.
-   - Use Maven to recompile and run your tests with:
-     ```bash
-     mvn test
-     ```
-   - This command will execute all tests defined in `src/test/java` and display the results for each sorting case you’ve tested.
+   ```bash
+   mvn test
+   ```
+
+   This will execute all the tests defined in the project and show the results in the terminal.
+
 
 ## Contributing
 
