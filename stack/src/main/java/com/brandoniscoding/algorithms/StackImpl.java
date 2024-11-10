@@ -25,4 +25,8 @@ public interface StackImpl<T> {
 
     // Method to check if a specific element is present in the stack
     boolean contains(T element);
+
+    // Method to get description
+    void description();
+
 }
