@@ -1,6 +1,6 @@
 <!-- Logo -->
 <div align="center">
-  <img src="./java.svg" alt="Java Logo">
+  <img src="./java.svg" alt="Java Logo" width="120">
 </div>
 
 <!-- Title -->
@@ -35,13 +35,8 @@
   </a>
 
   <!-- License Badge -->
-  <a href="https://github.com/CamJSP-Community/java_programming/blob/master/LICENSE">
+  <a href="https://github.com/CamJSP-Community/java_programming/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/CamJSP-Community/java_programming?style=for-the-badge" alt="License">
-  </a>
-
-  <!-- Code Size Badge -->
-  <a href="https://github.com/CamJSP-Community/java_programming">
-    <img src="https://img.shields.io/github/languages/code-size/CamJSP-Community/java_programming?style=for-the-badge" alt="Code size">
   </a>
 
 </div>
@@ -50,36 +45,32 @@
 
 ## Description
 
-This repository is a comprehensive source of algorithms, classical problems, and fundamental concepts implemented in Java, structured as a Maven project. It is designed to serve as a reference and learning tool for developers who want to deepen their understanding of algorithms and data structures in Java.
-
-You will find sorting algorithms, data structures such as trees, queues, stacks, as well as more advanced Java problems. This repository is designed to evolve with new contributions.
+This repository serves as a collection of classic algorithms and foundational concepts implemented in Java. It aims to be a learning resource for developers looking to deepen their understanding of algorithms and Java programming.
 
 ## Table of Contents
+  
+  - [Description](#description)
+  - [Algorithms](#algorithms)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-<details>
-  <summary><strong>Sorts</strong></summary>
-  <p>Details about sorting algorithms.</p>
+## Algorithms
 
-  For more information about sorting algorithms, refer to the [README file in the 'sorts' folder](sorts/README.md).
-</details>
+- **Sorting Algorithms**:
+  - QuickSort
+  - MergeSort
+  - HeapSort
 
-
-
-
-<details>
-  <summary><strong>Stacks</strong></summary>
-  <p>Details about stack data structures.</p>
-  <!-- Include relevant content or links here -->
-</details>
 
 ## Installation
 
 ### Prerequisites
 
-Make sure you have installed the following before cloning the repository:
+Ensure the following are installed:
 
-- Java (JDK 21 or newer)
-- Maven
+- Java Development Kit (JDK 21 or newer)
+- Apache Maven
 
 ### Installation Steps
 
@@ -88,30 +79,22 @@ Make sure you have installed the following before cloning the repository:
    git clone https://github.com/CamJSP-Community/java_programming.git
    ```
 
-2. Navigate to the cloned directory:
+2. Navigate to the directory:
    ```bash
    cd java_programming
    ```
 
-3. Access the project you want, for example, the sorting one:
+3. Compile and run any Java program:
    ```bash
-   cd sort
-   ```
-
-4. Build the project using Maven:
-   ```bash
-   mvn clean install
-   ```
-
-5. Run the tests:
-   ```bash
-   mvn test
+   javac QuickSort.java
+   java QuickSort
    ```
 
 ## Contributing
 
-We welcome contributions from the community! For more information, please refer to the [CONTRIBUTING.md](./.github/CONTRIBUTING.md) file.
+Contributions are welcome! Please refer to the [CONTRIBUTING.md](./.github/CONTRIBUTING.md) file for guidelines.
 
 ## License
 
-This project is licensed under the [MIT](./LICENSE) license.!
+This project is licensed under the [MIT](./LICENSE) license. Feel free to use and modify the code in this repository.
+

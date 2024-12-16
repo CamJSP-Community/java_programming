@@ -1,128 +1,36 @@
-# Contribution Guide
+# Contributing to java_programming
 
-Thank you for considering contributing to this project! This guide will help you understand how to contribute effectively and adhere to the conventions of this repository.
+Thank you for your interest in contributing to `java_programming`! Here's a quick guide to get you started:
 
-<div align="center">
+## How to Contribute
 
-<!-- License Badge -->
-![License](https://img.shields.io/github/license/CamJSP-Community/java_programming?style=for-the-badge)
+1. **Fork the Repository**: Click on the "Fork" button to create your own copy of the project.
+2. **Clone the Repository**: Use the following command to clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/java_programming.git
+   ```
+3. **Create a Branch**: Create a new branch for your changes:
+   ```bash
+   git checkout -b your-branch-name
+   ```
+4. **Make Changes**: Modify the code or documentation as needed.
+5. **Commit Changes**: Commit your changes with a clear message:
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   ```
+6. **Push Changes**: Push your changes to your forked repository:
+   ```bash
+   git push origin your-branch-name
+   ```
+7. **Submit a Pull Request**: Open a pull request on the original repository and describe your changes.
 
-<!-- Star Badge -->
-![GitHub Stars](https://img.shields.io/github/stars/CamJSP-Community/java_programming?style=for-the-badge)
+## Guidelines
 
-<!-- Fork Badge -->
-![GitHub Forks](https://img.shields.io/github/forks/CamJSP-Community/java_programming?style=for-the-badge)
+- Keep your changes concise and focused.
+- Follow the project's coding style.
+- Test your changes before submitting.
+- Be respectful and collaborative.
 
-</div>
+Thank you for helping us improve this project!
 
----
-
-## Repository Structure (Example)
-
-```bash
-java_programming/
-├── sorting/
-│   ├── pom.xml               
-│   ├── src/
-│   │   ├── BubbleSort.java
-│   │   ├── InsertionSort.java
-│   │   ├── QuickSort.java
-│   │   └── Main.java
-│   ├── tests/
-│   │   └── SortTest.java
-│   └── utils/
-│       └── Utils.java
-├── binary_search_tree/
-│   ├── pom.xml               
-│   ├── src/
-│   │   ├── Search.java
-│   │   └── Add.java
-│   ├── tests/
-│   │   └── TreeTest.java
-│   └── utils/
-│       └── Utils.java
-```
-
-Each project folder is a Maven project, making it easy to manage dependencies and install the project if needed.
-
----
-
-## Steps to Contribute
-
-### 1. Fork the Repository
-
-Create a copy of the repository to your GitHub account by clicking the **"Fork"** button at the top of the page.
-
-### 2. Clone the Repository Locally
-
-Clone your fork locally to work on it:
-
-```bash
-git clone https://github.com/CamJSP-Community/java_programming.git
-```
-
-### 3. Create a Branch for Your Changes
-
-Create a new branch for your changes to keep the `master` branch clean:
-
-```bash
-git checkout -b your-branch-name
-```
-
-### 4. Make Your Changes
-
-Make the modifications or additions you wish to contribute. Be sure to follow the project's coding conventions.
-
-### 5. Commit Your Changes
-
-Save your changes with a clear and concise message:
-
-```bash
-git add .
-git commit -m "Added selection sort implementation"
-```
-
-### 6. Push Your Changes to GitHub
-
-Push your branch to your GitHub fork:
-
-```bash
-git push origin your-branch-name
-```
-
-### 7. Open a Pull Request
-
-Go to the original repository on GitHub and open a **Pull Request** from your branch.
-
----
-
-## Coding Conventions
-
-- **Code Style**: Follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
-- **Tests**: Add tests for any new feature or bug fix. Use the following command to run the tests:
-
-```bash
-mvn test
-```
-
-## License
-
-This project is licensed under the [MIT](./LICENSE) license. By contributing, you agree that your contribution will be under this license.
-
----
-
-## Useful Resources
-
-- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
-- [How to Write a Good Commit Message](https://chris.beams.io/posts/git-commit/)
-- [Guide to Pull Requests on GitHub](https://docs.github.com/en/github/collaborating-with-pull-requests)
-
----
-
-## Contact
-
-For any questions or assistance, feel free to open an [issue](https://github.com/CamJSP-Community/java_programming/issues) or contact us directly.
-
----
-
-*Thank you for your interest in contributing to this project! Your help is valuable in improving and expanding this repository.*
